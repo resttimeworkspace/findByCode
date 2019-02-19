@@ -25,12 +25,17 @@
         @media print{
             #qrcode{
                 position: absolute;;
-                width: 64px;
-                top:0px;
+                width: 80px;
+                top:-80px;
                 right: 10px;
                 display: inline;
 
             }
+        }
+        .qrcode_wrap{
+            max-width: 921px;
+            margin: 0 auto;
+            position: relative;
         }
         tbody td tr {
             border: #000000 solid 1px;
@@ -56,14 +61,18 @@
     </head>
     <body>
 
-        <img id='qrcode' src="./qrcode.png" alt="">
         <div class="MsoNormal" align="center" style="text-align:center;"><b><span
                     style="font-family:SimSun;font-size:20pt;">个人住房信息查询记录</span></b>
         </div>
         <div class="MsoNormal" align="center" style="text-align:center;"><span
                 style="font-family:SimSun;font-size:14pt;">（含名下现有和曾有房屋信息）</span>
         </div>
+        <div class="qrcode_wrap">
+                <img id='qrcode' src="./qrcode.png" alt="">
+        </div>
         <table class="MsoNormalTable" align="center">
+                
+
             <thead>
                 <tr>
                     <td width="320" style="text-align:left;" colspan="5">
@@ -152,7 +161,7 @@
                             style="text-align:center;"><b><span
                                     style="font-family:SimSun;font-size:10.5pt;">房屋地址</span></b><b><span
                                     style="font-family:SimSun;font-size:10.5pt;"></span></b></div></td>
-                    <td width="60" valign="center" style="border:1.0000pt solid
+                    <td width="56" valign="center" style="border:1.0000pt solid
                         windowtext;"><div class="MsoNormal" align="center"
                             style="text-align:center;">
                             <b><span
