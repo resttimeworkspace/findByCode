@@ -22,12 +22,16 @@
         #qrcode{
             display: none;
         }
+        #ymyj{
+            display: none;
+        }
+
         @media print{
             #qrcode{
                 position: absolute;;
                 width: 80px;
                 top:-85px;
-                right: 10px;
+                right: 0px;
                 display: inline;
 
             }
@@ -40,6 +44,12 @@
             }
             .warning td{
                 border: none !important;
+            }
+            #ymyj{
+                position: absolute;;
+                bottom:0;
+                left: 45%;
+                display: inline-block;
             }
         }
         .qrcode_wrap{
@@ -80,6 +90,7 @@
         <div class="qrcode_wrap">
                 <img id='qrcode' src="./qrcode.png" alt="">
         </div>
+        <p id="ymyj">第1页/共1页</p>
         <table class="MsoNormalTable" align="center">
                 
 
